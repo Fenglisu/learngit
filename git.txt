@@ -19,9 +19,48 @@ $ git rm filename
 [修改文件 至暂存区]
 $ cat filename
 
-[查看当前文件状态]
+[查看文件修改信息]
+$ git diff filename 
+
+[将暂存区文件添加至仓库]
+$ git commit -m "本次提交备注"
+
+========================== [ 本地仓库命令 ] ================================
+
+[将当前目录创建为本地仓库(版本库)]
+$ git init
+
+[查看仓库当前状态]
 $ git status
 
-========================== [ 文件操作命令 ] ================================
+========================== [ 远程仓库命令 ] ================================
 
+[关联远程仓库至本地]
+$ git remote add origin git@github.com:michaelliao/learngit.git
+
+[将本地所有内容推送到远程仓库]
+$ git push -u origin master
+
+[将本地最新修改推送到远程仓库]
+$ git push origin master
+
+[将远程仓库克隆至本地]
+$ git clone git@github.com:michaelliao/gitskills.git
+
+========================== [ 版本控制命令 ] ================================
+
+[查看提交的历史记录]
+$ git log
+
+[查看提交的简单历史记录]
+$ git log --pretty=oneline
+
+[回退上一个版本]
+$ git reset --hard HEAD^
+
+[回退上上个版本]
+$ git reset --hard HEAD^^
+
+[回退上上个版本]
+$ git reset --hard HEAD^^
 
