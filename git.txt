@@ -1,4 +1,27 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
+
+========================== [ 账户相关命令 ] ================================
+
+【生成SSH Key】
+$ ssh-keygen -t rsa -C "youremail@example.com"
+
+【设置每个电脑的Name and Email】
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+========================== [ 文件操作命令 ] ================================
+
+[添加文件 至暂存区]
+$ git add filename
+
+[删除文件 至暂存区]
+$ git rm filename
+
+[修改文件 至暂存区]
+$ cat filename
+
+[查看当前文件状态]
+$ git status
+
+========================== [ 文件操作命令 ] ================================
+
+
